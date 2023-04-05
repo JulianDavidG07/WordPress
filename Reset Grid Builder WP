@@ -1,0 +1,57 @@
+.wpgb-viewport {
+	height: auto!important;
+}
+
+.wp-grid-builder.wpgb-enabled .wpgb-card {
+	position: relative!important;
+	top: inherit!important;
+	left: inherit!important;
+	right: inherit!important;
+	bottom: inherit!important;
+	width: auto!important;
+	height: auto!important;
+	
+}
+
+/******************** ESTILOS GRID *************************/
+
+.wpgb-masonry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+.wpgb-masonry .wpgb-card {
+	flex-basis: calc((100% - 120px) / 3);
+}
+
+
+.wpgb-masonry .wpgb-card:nth-child(1),
+.wpgb-masonry .wpgb-card:nth-child(2) {
+	flex-basis: calc((100% - 100px) / 2);
+	margin: 0 0 70px 0;
+}
+
+.wpgb-facet .wpgb-pagination {
+    margin: 62px 0 0!important;
+}
+
+
+@media (max-width: 768px) {
+	.wpgb-masonry .wpgb-card:nth-child(1),
+	.wpgb-masonry .wpgb-card:nth-child(2) {
+		flex-basis: calc((100% - 100px) / 2);
+		margin: 0 0 0 0;
+	}
+	
+	.wpgb-masonry .wpgb-card {
+		flex-basis: 100%!important;
+		margin: 0 0 40px 0!important;
+	}
+
+	.wpgb-facet .wpgb-pagination {
+		margin: 22px 0 0!important;
+	}
+}
